@@ -1,0 +1,73 @@
+<head>
+<meta charset="utf-8" />
+<title>Mapbox Example 7- Denver Bike Lanes</title>
+
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+ /* Legend styles */
+    .legend {
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 999;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .legend h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .legend div {
+      display: flex;
+      align-items: center;
+    }
+
+    .legend div span {
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+    }
+</style>
+
+</head>
+
+<body>
+<div id="map"></div>
+<div class="legend">
+    <h3>Water and Sanitation Districts in Colorado</h3>
+    <div>
+      <span style="background-color: #060cc1;"></span> Water and Sanitation Districts
+    </div>
+    <div>
+      <span style="background-color: #d31212;"></span> County Boundaries
+    </div>
+  </div>
+    
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoicml2ZXNub2VtaTA0IiwiYSI6ImNtN3c2endtNzAybXkycm9kYXZzZnFhdjAifQ.iSCEpkGmT3vDnMFAy4fsEw';  //Put your mapbox access token here
+
+        // Load a new map in the 'map' HTML div
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/rivesnoemi04/cm8xdz58i000d01t16pjv154p/draft', // Put your mapbox style ID here
+            center: [-105.737, 38.716], // starting position [lng, lat]
+            zoom: 6.3 // starting zoom
+        });
+
+</script>
+
+</body>
+</html>
