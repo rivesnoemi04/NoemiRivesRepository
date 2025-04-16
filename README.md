@@ -15,4 +15,4 @@ example 17:
 https://rivesnoemi04.github.io/NoemiRivesRepository/lab7/example17.html
 
 Lab 8 example: 
-https://rivesnoemi04.github.io/NoemiRivesRepository/
+https://rivesnoemi04.github.io/NoemiRivesRepository/ExampleLab8.html
