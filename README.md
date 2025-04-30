@@ -22,4 +22,4 @@ https://rivesnoemi04.github.io/NoemiRivesRepository/Lab9.html
 
 Final: 
 https://rivesnoemi04.github.io/NoemiRivesRepository/lynx_habitat.html
-https://rivesnoemi04.github.io/NoemiRivesRepository/
+https://rivesnoemi04.github.io/NoemiRivesRepository/Final_presentation2.html
