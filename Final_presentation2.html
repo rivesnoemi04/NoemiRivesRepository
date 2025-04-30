@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Final Presentation</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<style>
+#section0 {
+	background-image: url('colorado-photography.jpg'); /* Replace with your image path */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#section0 .intro {
+	position: relative;
+	z-index: 1;
+}
+
+#section0::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay for readability */
+	z-index: 0;
+}
+
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu {
+		bottom: 80px;
+	}
+	#infoMenu li a {
+		color: #fff;
+		z-index: 999;
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Sensitive Wildlife vs. Human Interaction</h1>
+			<p>Noemi Rives, Addison Partin, Jordan King, and Charles Rupprecht</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Threatened Species: Lynx</h1>
+				<p>
+					Lynx Habitats in Colorado and Recreational Activities
+				</p>
+                <iframe id="Lynx_Map" src="https://rivesnoemi04.github.io/NoemiRivesRepository/lynx_habitat.html" height="700px" width="1200px" frameBorder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<div class="intro">
+				<h1>Endangered Species: Wolf</h1>
+                <iframe id="Wolf_map" src="https://apartin7.github.io/Group4_LivingEnvironment//Wolf_Endangered.html" height="700px" width="1200px" frameBorder="0" scrolling="no"></iframe>
+			</div>
+            
+       <div class="slide" id="slide3">
+            <div class="intro">
+				<h1>Extinct Species: Wolverine</h1>
+                <iframe id="Wolverine_map" src="https://apartin7.github.io/Group4_LivingEnvironment//WolverineExtinct.html" height="700px" width="1200px" frameBorder="0" scrolling="no"></iframe>
+			</div>
+            </div>
+            
+        <div class="slide" id="slide4">
+            <div class="intro">
+				<h1>Wildlife Migration</h1>
+                <iframe id="Migration_map" src="https://apartin7.github.io/Group4_LivingEnvironment//WIldlifeMigration.html" height="700px" width="1200px" frameBorder="0" scrolling="no"></iframe>
+			</div>
+            </div>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', 'thankYou'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#7E8F7C'],
+        css3: true
+    });
+</script>
+
+</body>
+</html>
